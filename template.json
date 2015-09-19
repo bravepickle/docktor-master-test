@@ -8,7 +8,7 @@
         "atlas_name": "docktor-master-test",
         "iso_checksum": "a3b345908a826e262f4ea1afeb357fd09ec0558cf34e6c9112cead4bb55ccdfb",
         "iso_url": "http://releases.ubuntu.com/trusty/ubuntu-14.04.3-server-amd64.iso",
-        "version": "0.0.7"
+        "version": "0.0.8"
     },
     "provisioners": [
         {
