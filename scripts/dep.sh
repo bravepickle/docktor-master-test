@@ -24,7 +24,7 @@ puppet --version || (\
     wget https://apt.puppetlabs.com/puppetlabs-release-trusty.deb && \
     dpkg -i puppetlabs-release-trusty.deb && \
     apt-get update && \
-    apt-get install puppet -y)
+    apt-get install puppet-common -y)
 
 echo Setup Docker Compose
 docker-compose --version || (\
