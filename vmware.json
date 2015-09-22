@@ -8,7 +8,7 @@
         "atlas_name": "docktor-master-test",
         "iso_checksum": "a3b345908a826e262f4ea1afeb357fd09ec0558cf34e6c9112cead4bb55ccdfb",
         "iso_url": "http://releases.ubuntu.com/trusty/ubuntu-14.04.3-server-amd64.iso",
-        "version": "0.0.10"
+        "version": "0.0.12"
     },
     "provisioners": [
         {
@@ -70,7 +70,7 @@
             "artifact": "{{user `atlas_username`}}/{{user `atlas_name`}}",
             "artifact_type": "vagrant.box",
             "metadata": {
-                "provider": "vmware_fusion",
+                "provider": "vmware_desktop",
                 "version": "{{user `version`}}"
             }
         }]
