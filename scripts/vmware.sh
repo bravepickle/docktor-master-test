@@ -24,7 +24,8 @@ fi
 echo Installing VMWARE Tools patches
 apt-get install git -y
 cd /tmp
-git clone https://github.com/rasa/vmware-tools-patches.git
+#git clone https://github.com/rasa/vmware-tools-patches.git
+git clone https://github.com/bravepickle/vmware-tools-patches.git
 cd vmware-tools-patches
 ./patched-open-vm-tools.sh
 rm -fr /tmp/vmware-tools-patches
