@@ -36,4 +36,4 @@ echo Setup SupervisorD
 supervisord --version || (apt-get install supervisor -y)
 
 echo Setup NGINX
-nginx --version || (apt-get install nginx -y)
+nginx --version || (apt-get install nginx -y) && nginx --version
