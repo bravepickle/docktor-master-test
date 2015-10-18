@@ -8,13 +8,9 @@
         "atlas_name": "docktor-master-test",
         "iso_checksum": "a3b345908a826e262f4ea1afeb357fd09ec0558cf34e6c9112cead4bb55ccdfb",
         "iso_url": "http://releases.ubuntu.com/trusty/ubuntu-14.04.3-server-amd64.iso",
-        "version": "0.0.19"
+        "version": "0.0.20"
     },
     "provisioners": [
-        {
-            "type": "puppet-masterless",
-            "manifest_file": "puppet/site.pp"
-        },
         {
             "type": "shell",
             "scripts": [
@@ -34,6 +30,10 @@
                     "execute_command": "echo 'vagrant'|sudo -S bash '{{.Path}}'"
                 }
             }
+        },
+        {
+            "type": "puppet-masterless",
+            "manifest_file": "puppet/site.pp"
         }
     ],
     "builders": [
